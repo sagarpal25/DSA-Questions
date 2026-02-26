@@ -8,8 +8,8 @@ int main()
     int n = v.size();
     int diff = 30;
     sort(v.begin(), v.end());
-    int start = 0, end = 1;
-    while (start < end && end < n)
+    int start = 0, end = 0;
+    while (start <= end && end < n)
     {
         if (v[end] - v[start] == diff)
         {
